@@ -8,6 +8,7 @@ import requests as req
 from bs4 import BeautifulSoup as bs
 from openpyxl import Workbook
 
+# 엑셀파일 생성
 workbook = Workbook()
 sheet = workbook.active
 sheet['A1'] = '파이썬 뉴스 크롤링 엑셀화 실습'
@@ -38,10 +39,11 @@ while True:
         title = tag_a.text
         href = tag_a['href']
 
-        print('count :', count)
-        print('title :', title.strip())
-        print('href :', href.strip())
-        sheet.append([title.strip(), href.strip()])
+        # print('count :', count)
+        # print('title :', title.strip())
+        # print('href :', href.strip())
+        sheet.append([count, title.strip(), href.strip()])
+        print('%d건...' % count)
 
         count += 1
 
