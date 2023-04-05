@@ -27,8 +27,8 @@ btnLogin.click()
 # 아이디, 비밀번호 입력
 input_id = browser.find_element(By.CSS_SELECTOR, '#id')
 input_pw = browser.find_element(By.CSS_SELECTOR, '#pw')
-input_id.send_keys('wndud600')
-input_pw.send_keys('hyomin0320')
+input_id.send_keys('abcd')
+input_pw.send_keys('1234')
 
 # 최종 로그인 클릭
 btnSubmit = browser.find_element(By.CSS_SELECTOR, '#log\.login')
