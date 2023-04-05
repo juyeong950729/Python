@@ -13,3 +13,15 @@ print(a*num3)
 print(a*num2)
 print(a*num1)
 print(a*b)
+
+
+
+
+"""
+날짜 : 2023/04/05
+이름 : 조주영
+내용 : 백준 1단계 11번 문제 꼬마 정민
+"""
+
+a, b, c = map(int, input().split())
+print(a+b+c)
